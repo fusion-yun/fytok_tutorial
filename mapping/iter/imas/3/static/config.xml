@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="magnetics.xml" />  TODO:
+    <xi:include href="wall.xml" />
+    <xi:include href="pf_active.xml" />
+</mapping>
