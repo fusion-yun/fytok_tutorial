@@ -8,19 +8,13 @@ if __name__ == "__main__":
 
     tok = Tokamak(f"file+geqdsk://{pathlib.Path(__file__).parent.as_posix()}/data/g900003.00230_ITER_15MA_eqdsk16HR.txt",
                   device='ITER', shot='900003', time=2.3)
-
-    # eq = tok.equilibrium
-    # logger.debug(eq_profiles_1d.dphi_dpsi.__array__())
-    if False:
-        eq2d = tok.equilibrium.time_slice.current.profiles_2d[0]
-
+    if True:
         sp_view.display(tok, title=tok.short_description,
                         styles={"interferometer": False},
                         output=output_path/f"{tok.tag}_rz.svg")
 
     if True:  # plot tokamak geometric profile
         eq_profiles_1d = tok.equilibrium.time_slice.current.profiles_1d
-
 
         sp_view.profiles(
             [
