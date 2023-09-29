@@ -43,7 +43,6 @@ setup(
         "Topic :: Scientific/Engineering :: Physics",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.10",
-        "Programming Language :: Python :: 3.11",
     ],
     keywords="plasma physics",  # 关键字列表
     python_requires=">=3.10, <4",  # Python版本要求
