@@ -3,7 +3,9 @@
 #### 介绍
 ![Image](docs/figures/FyTok.svg "FyTok")
 
-FyTok 教程，包含典型用例和插件模板。
+FyTok Tutorial.
+ - Demo use cases 
+ - Plugin templates.
 
 用途：
 
