@@ -9,7 +9,9 @@ FyTok Tutorial.
 
 #### Requirements
 
+    - Python = 3.10.*
     - SpDB, https://github.com/fusion-yun/spdb (develop branch)    
     - fytok, (contact to yuzhi@ipp.ac.cn)
+    - numpy,scipy,....
 
 
