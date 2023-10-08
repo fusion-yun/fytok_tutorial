@@ -14,29 +14,11 @@ from spdm.numlib.misc import array_like
 from spdm.utils.tree_utils import merge_tree_recursive
 
 
-@CoreTransport.Model.register(["demo_eq"])
+@CoreTransport.Model.register(["spitzer"])
 class SpitzerDemo(CoreTransport.Model):
-    """
-        Spitzer Resistivity
 
-        References:
-        - Tokamaks, Third Edition, Chapter 14  ,p727,  J.A.Wesson 2003
-    """
-
-    def __init__(self, cache: collections.abc.Mapping = None, *args,  **kwargs):
-        cache = merge_tree_recursive(
-            {
-                "identifier": "neoclassical",
-                "code": {
-                    "name": "spitzer",
-                    "description":  f"{self.__class__.__name__} Spitzer Resistivity",
-                }
-            },
-            cache)
-        super().__init__(cache,  *args, **kwargs)
-
-    def refresh(self, *args, equilibrium: Equilibrium.TimeSlice, core_profiles_1d: CoreProfiles.Profiles1D,  **kwargs) -> float:
-        # residual = super().refresh(*args, equilibrium=equilibrium, core_profiles=core_profiles, **kwargs)
+    def refresh(self, *args, equilibrium: Equilibrium.TimeSlice.Profiles1D, 
+                core_profiles_1d: CoreProfiles.Profiles1D,  **kwargs):
 
         eV = scipy.constants.electron_volt
 
@@ -52,7 +34,7 @@ class SpitzerDemo(CoreTransport.Model):
         psi_boundary = equilibrium.global_quantities.psi_boundary
         psi = psi_norm*(psi_boundary-psi_axis)+psi_axis
 
-        q = equilibrium.profiles_1d.q(psi)
+        q = equilibrium.q(psi)
 
         # Tavg = np.sum([ion.density*ion.temperature for ion in core_profile.ion]) / \
         #     np.sum([ion.density for ion in core_profile.ion])
