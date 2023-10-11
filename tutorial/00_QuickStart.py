@@ -8,19 +8,26 @@ if __name__ == "__main__":
 
     tok = Tokamak(f"file+geqdsk://{pathlib.Path(__file__).parent.as_posix()}/data/g900003.00230_ITER_15MA_eqdsk16HR.txt",
                   device='ITER', shot='900003', time=2.3)
+    eq_profiles_1d = tok.equilibrium.time_slice.current.profiles_1d
+
     if True:
         sp_view.display(tok, title=tok.short_description,
                         styles={"interferometer": False},
                         output=output_path/f"{tok.tag}_rz.svg")
 
     if True:  # plot tokamak geometric profile
-        eq_profiles_1d = tok.equilibrium.time_slice.current.profiles_1d
 
         sp_view.profiles(
             [
                 ((eq_profiles_1d.dvolume_dpsi, {"label": r"$\frac{dV}{d\psi}$"}), {"y_label": r"$[Wb]$"}),
 
-                # (eq_profiles_1d.dpsi_drho_tor, {"label": r"$\frac{d\psi}{d\rho_{tor}}$"}),
+                (eq_profiles_1d.dphi_dpsi, {"label": r"$\frac{d\phi}{d\psi}$"}),
+
+                (eq_profiles_1d.rho_tor, {"label": r"$\rho_{tor}$"}),
+
+                ((eq_profiles_1d.dpsi_drho_tor, {"label": r"$\frac{d\psi}{d\rho_{tor}}$"}),
+                 {"y_label": r"$\frac{d\psi}{d\rho_{tor}}$"}),
+
                 ([
                     # (bs_eq_fpol,  {"label": "astra", **bs_line_style}),
                     (eq_profiles_1d.f,  {"label": r"fytok"}),
