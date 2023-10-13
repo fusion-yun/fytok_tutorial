@@ -10,6 +10,7 @@ if __name__ == "__main__":
                   device='ITER', shot='900003', time=2.3)
     eq_profiles_1d = tok.equilibrium.time_slice.current.profiles_1d
 
+
     if True:
         sp_view.display(tok, title=tok.short_description,
                         styles={"interferometer": False},
