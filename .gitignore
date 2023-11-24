@@ -142,3 +142,5 @@ python/fytok/_ontology
 **/obsolete/
 
 VERSION.txt
+# sphinx
+**/_build

@@ -1,0 +1,17 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: 00_QuickStart
+- file: B00_SpDB_Manual.ipynb  
+- file: B01_SpDB_QuickStart.ipynb  
+- file: B03_SpDB_Open_Entry.ipynb      
+- file: B04_SpDB_file.ipynb     
+- file: B06_sp_property.ipynb
+- file: B00_SpDB_Manual.md     
+- file: B02_SpDB_Entry.ipynb       
+- file: B04_SpDB_Open_Entr_file.ipynb  
+- file: B05_SpDB_MDSplus.ipynb  
+- file: B06_sp_property_new.ipynb
