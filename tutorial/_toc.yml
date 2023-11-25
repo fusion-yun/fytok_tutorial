@@ -3,14 +3,22 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: F00_FyTok_Manual.ipynb
-- file: 00_QuickStart.ipynb
-- file: 02-FyTrans.ipynb
-- file: B00_SpDB_Manual.ipynb  
-- file: B01_SpDB_QuickStart.ipynb  
-- file: B02_SpDB_Entry.ipynb
-- file: B03_SpDB_Open_Entry.ipynb      
-- file: B05_SpDB_MDSplus.ipynb
-- file: B06_sp_property_new.ipynb
-- file: B07_SpDB_File.ipynb
+parts:
+  - caption: FyTok 托卡马克模拟器
+    chapters:
+      - file: FyTok_Introduction.ipynb
+      - file: FyTok_QuickStart.ipynb
+      - file: FyTok_module_Device.ipynb
+      - file: FyTok_module_EqTrans.ipynb
+      - file: FyTok_plugin_FyEq.ipynb
+      - file: FyTok_plugin_FyTrans.ipynb
+
+  - caption: SpDM (SpDB) 数据集成工具
+    chapters:
+      - file: B01_SpDB_QuickStart.ipynb
+      - file: B06_sp_property_new.ipynb
+      - file: B02_SpDB_Entry.ipynb
+        sections:
+          - file: B03_SpDB_Open_Entry.ipynb
+          - file: B05_SpDB_MDSplus.ipynb
+          - file: B07_SpDB_File.ipynb
