@@ -1,10 +1,10 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: FyTok/SpDM 用户手册
-author:  FuYun 开发组
+title: FyTok/SpDM 用户手册 （alpha版）
+author: FuYun 开发组
 logo: logo.png
-copyrigh: 2023 ASIPP
+copyright: 2023 ASIPP
 only_build_toc_files: true
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html

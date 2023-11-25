@@ -8,17 +8,24 @@ parts:
     chapters:
       - file: FyTok_Introduction.ipynb
       - file: FyTok_QuickStart.ipynb
-      - file: FyTok_module_Device.ipynb
-      - file: FyTok_module_EqTrans.ipynb
-      - file: FyTok_plugin_FyEq.ipynb
-      - file: FyTok_plugin_FyTrans.ipynb
+      - file: FyTok_module.ipynb
+        sections:
+          - file: FyTok_module_Device.ipynb
+          - file: FyTok_module_EqTrans.ipynb
+      - file: FyTok_plugin.ipynb
+        sections:
+          - file: FyTok_plugin_FyEq.ipynb
+          - file: FyTok_plugin_FyTrans.ipynb
 
-  - caption: SpDM (SpDB) 数据集成工具
+  - caption: SpDM (SpDB) 集成建模工具
     chapters:
+      - file: SpDM_Introduction.ipynb
       - file: SpDM_QuickStart.ipynb
       - file: SpDM_sp_property.ipynb
       - file: SpDM_Entry.ipynb
         sections:
-          - file: SpDM_Open_Entry.ipynb
-          - file: SpDM_File.ipynb
-          - file: SpDM_MDSplus.ipynb
+          - file: SpDM_Entry_open.ipynb
+          - file: SpDM_Entry_File.ipynb
+          - file: SpDM_Entry_Database.ipynb
+      - file: SpDM_view.ipynb    
+      - file: SpDM_FunctionClass.ipynb
