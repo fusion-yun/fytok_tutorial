@@ -15,10 +15,10 @@ parts:
 
   - caption: SpDM (SpDB) 数据集成工具
     chapters:
-      - file: B01_SpDB_QuickStart.ipynb
-      - file: B06_sp_property_new.ipynb
-      - file: B02_SpDB_Entry.ipynb
+      - file: SpDM_QuickStart.ipynb
+      - file: SpDM_sp_property.ipynb
+      - file: SpDM_Entry.ipynb
         sections:
-          - file: B03_SpDB_Open_Entry.ipynb
-          - file: B05_SpDB_MDSplus.ipynb
-          - file: B07_SpDB_File.ipynb
+          - file: SpDM_Open_Entry.ipynb
+          - file: SpDM_File.ipynb
+          - file: SpDM_MDSplus.ipynb
