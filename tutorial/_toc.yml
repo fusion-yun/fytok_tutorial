@@ -7,10 +7,10 @@ parts:
   - caption: FyTok 托卡马克模拟器
     chapters:
       - file: FyTok_Introduction.md
-      - file: FyTok_QuickStart.ipynb
-      - file: FyTok_Tokamak.ipynb
+      - file: FyTok_Installation.ipynb
       - file: FyTok_modules.md
         sections:
+          - file: FyTok_module_Tokamak.ipynb
           - file: FyTok_module_Device.ipynb
           - file: FyTok_module_EqTrans.ipynb
       - file: FyTok_plugin.ipynb
@@ -21,7 +21,7 @@ parts:
   - caption: SpDM (SpDB) 数据集成建模
     chapters:
       - file: SpDM_Introduction.md
-      - file: SpDM_QuickStart.ipynb
+      - file: SpDM_Installation.ipynb
       - file: SpDM_HTree.ipynb
       - file: SpDM_Entry.ipynb
         sections:
