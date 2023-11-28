@@ -1,0 +1,98 @@
+@startuml
+skinparam classFontName 'Noto Sans CJK SC'
+
+package "Opreation 运行和控制系统" {
+    [Pulse Schedule] --> [Controllers] 
+}
+
+package "Device and Magnetics Field 装置位形，磁场线圈"{
+    [Wall] 
+    [TF]                        -->    Coils
+    [PF Active]                 -->    Coils                    
+    [Iron Core]                 -->    Coils
+    [Coils Non Axisymmetric]    -->    Coils
+    [EMCoupling]                -->    Coils
+
+    [Magnetics] 
+
+    ControlMagnetic --> [TF]                       
+    ControlMagnetic --> [PF Active]                
+    ControlMagnetic --> [Iron Core]                
+    ControlMagnetic --> [Coils Non Axisymmetric]   
+    ControlMagnetic --> [EMCoupling]               
+}
+
+
+package "Equilibrium and transport 平衡和输运" {
+   [TransportSolver]    -->  [CoreProfiles]
+   [Equilibrium]        --> [FluxSurface]  
+   [FluxSurface]        --> [TransportSolver]
+   [CoreProfiles]       --> [Equilibrium] 
+   [CoreSources]        --> [TransportSolver]
+   [CoreTransport]      --> [TransportSolver]
+
+}
+
+package "Auxiliary 辅助系统，加热、驱动和加料" {
+  [ECLaunchers]    -->  RF
+  [ICAntennas]     -->  RF
+  [LHAntennas]     -->  RF
+  [NBI]            -->  Particles
+  [Pellets]        -->  Particles   
+  [GasInjection]   -->  Particles
+
+  ControlAux --> [ECLaunchers]   
+  ControlAux --> [ICAntennas]    
+  ControlAux --> [LHAntennas]    
+  ControlAux --> [NBI]           
+  ControlAux --> [Pellets]       
+  ControlAux --> [GasInjection]  
+
+}
+
+
+
+package "Plasma 等离子体" {
+
+    [Radiation]             --> Sources
+    [Waves]                 --> Sources
+    
+    [MHD]                   --> Transport
+    [Gyrokinetics]          --> Transport
+    [Turbulence]            --> Transport
+
+}
+
+
+
+
+cloud "Simulator 模拟器"  {   
+    [Tokamak] 
+    [Scenario] 
+}
+
+[Scenario] -- [Pulse Schedule]   
+[Scenario] -- [Tokamak]
+
+Coils       --> [Equilibrium]
+[Magnetics] --> [Equilibrium]
+
+
+Transport   --> [CoreTransport] 
+
+
+RF          --> [Waves]
+Sources     --> [CoreSources] 
+Particles   --> [CoreSources]
+
+[Wall]              --> [Tokamak]
+[Equilibrium]       --> [Tokamak]
+[TransportSolver]   --> [Tokamak]
+
+[Tokamak]           <--> Diagnosis
+[Scenario]          --> [Controllers]
+[Pulse Schedule]    --> ControlAux
+[Controllers]       --> ControlMagnetic
+
+@enduml
+
