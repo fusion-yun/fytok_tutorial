@@ -3,7 +3,6 @@
 
 title: FyTok/SpDM 用户手册 （alpha版）
 author: FuYun 开发组
-logo: logo.png
 copyright: 2023 ASIPP
 only_build_toc_files: true
 # Force re-execution of notebooks on each build.
@@ -28,7 +27,8 @@ parse:
     - tasklist
   myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
   myst_dmath_double_inline: true # Allow display math ($$) within an inline context
-
+  substitutions:
+    FyTok : <font color="orange">_Fy_</font><font color="blue" >__Tok__</font> 
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
@@ -73,3 +73,18 @@ sphinx:
 
         % Use Chinese numerals for section numbering
         % \renewcommand\thechapter{\zhnum{chapter}}
+        
+    autosummary_generate: True
+    add_module_names: True
+    
+    plantuml_latex_output_format: pdf
+
+  extra_extensions:
+    - sphinxcontrib.plantuml
+    - sphinxcontrib.mermaid
+    - sphinx.ext.autodoc
+    - sphinx.ext.autosummary
+    - sphinx.ext.napoleon
+    - sphinx.ext.viewcode
+    - sphinx.ext.inheritance_diagram
+

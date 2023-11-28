@@ -2,13 +2,14 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: frontpage
 parts:
   - caption: FyTok 托卡马克模拟器
     chapters:
-      - file: FyTok_Introduction.ipynb
+      - file: FyTok_Introduction.md
       - file: FyTok_QuickStart.ipynb
-      - file: FyTok_module.ipynb
+      - file: FyTok_Tokamak.ipynb
+      - file: FyTok_modules.md
         sections:
           - file: FyTok_module_Device.ipynb
           - file: FyTok_module_EqTrans.ipynb
@@ -19,7 +20,7 @@ parts:
 
   - caption: SpDM (SpDB) 数据集成建模
     chapters:
-      - file: SpDM_Introduction.ipynb
+      - file: SpDM_Introduction.md
       - file: SpDM_QuickStart.ipynb
       - file: SpDM_HTree.ipynb
       - file: SpDM_Entry.ipynb
@@ -29,3 +30,6 @@ parts:
           - file: SpDM_Entry_Database.ipynb
       - file: SpDM_FunctionClass.ipynb
       - file: SpDM_View.ipynb    
+  
+
+  #   file: _api.rst
