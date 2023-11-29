@@ -11,8 +11,8 @@ myst:
 
 **SpDM**是一个自主开发的Python库，用于处理EAST数据分析中涉及的多种科学数据格式。它以MAS IDS为标准规范的本体，引入数据集成的思想将以不同语义和格式存储的数据在统一的数据模型下进行检索、查询。
 
-**SpDM**专门为集成建模分析系统FyTok的数据交互而设计，但是不一定与之绑定，独立于FyTok仍然可以使用。
-它可以读取和处理常用的多种类型的科学数据格式，包括：Python原生的数据格式：字典、List；半结构化数据结构，如：Namelist、JSON、XML、HDF5、netCDF等；结构化数据结构，如：Gdskfile，、Inputfile等；远程数据库系统，如EAST实验的MDSplus及CFETR设计的MDSplus数据库等。{{FyTok}} 将这些数据格式映射在标准的树状结构的语义下，以IMAS IDS为标准的数据交互语义，将数据绑定到 IMAS DD，以便在 IMAS DD 名称空间下统一异构多源数据。但是不依赖于IMAS ，不需要安装IMAS 。{{FyTok}} 读取的数据在内存中以Python中数据格式进行交互，其数据的语义是严格遵守IMAS IDS的树状结构。{{FyTok}} 也可以将数据写入到常用的多种类型的科学数据格式，包括：Python原生的数据格式：字典、List；半结构化数据结构，如：Namelist、JSON、XML、HDF5、netCDF等；结构化数据结构，如：Gdskfile，、Inputfile等；远程数据库系统，如EAST实验的MDSplus及CFETR设计的MDSplus数据库等。{{FyTok}} 也可以将数据写入到常用的多种类型的科学数据格式，包括：Python原生的数据格式：字典、List；半结构化数据结构，如：Namelist、JSON、XML、HDF5、netCDF等；结构化数据结构，如：Gdskfile，、Inputfile等；远程数据库系统，如EAST实验的MDSplus及CFETR设计的MDSplus数据库等。{{FyTok}} 也可以将数据写入到常用的多种类型的
+**SpDM**专门为集成建模分析系统FyTok的数据交互而设计，但是不一定与之绑定，独立于 {{FyTok}} 仍然可以使用。
+**SpDM**可以读取和处理常用的多种类型的科学数据格式，包括：Python原生的数据格式：字典、List；半结构化数据结构，如：Namelist、JSON、XML、HDF5、netCDF等；结构化数据结构，如：Gdskfile，、Inputfile等；远程数据库系统，如EAST实验的MDSplus及CFETR设计的MDSplus数据库等。{{SpDM}} 将这些数据格式映射在以IMAS IDS为标准的数据交互语义，将数据绑定到 IMAS DD，以便在 IMAS DD 名称空间下统一异构多源数据。但是不依赖于IMAS ，不需要安装IMAS 。{{SpDM}} 读取的数据在内存中以 Python 中数据格式进行交互，其数据的语义是严格遵守 IMAS IDS 的树状结构。{{SpDM}} 也可以将数据写入到常用的多种类型的科学数据格式。
  
 **SpDM**可以为用户提供：
 - 以IMAS IDS为标准的数据交互语义，将数据绑定到 IMAS DD，以便在 IMAS DD 名称空间下统一异构多源数据。但是不依赖于IMAS ，不需要安装IMAS 。
