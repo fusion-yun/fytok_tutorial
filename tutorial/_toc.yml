@@ -26,6 +26,7 @@ parts:
           - file: SpDM_Entry_open.ipynb
           - file: SpDM_Entry_File.ipynb
           - file: SpDM_Entry_Database.ipynb
+      - file: SpDM_File.ipynb
       # - file: SpDM_FunctionClass.ipynb
       # - file: SpDM_View.ipynb    
   
