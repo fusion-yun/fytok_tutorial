@@ -53,8 +53,6 @@ IMAS IDS 大多可以直接作为 Actor。其中，少部分是包含多个 Acto
 .. inheritance-diagram::  fytok.modules.Utilities.IDS
    :top-classes: spdm.data.Actor.Actor
 
-.. autoclass:: fytok.modules.Utilities.Code
-   :members: name,parameters, commit， version， copyright ， repository， output_flag， library
 
 .. autoclass:: fytok.modules.Utilities.Module
     :members: code,refresh,time_slice,current,previous,time,iteration,register
