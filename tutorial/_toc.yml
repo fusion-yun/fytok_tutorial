@@ -12,10 +12,9 @@ parts:
       - file: FyTok_module_Tokamak.ipynb
       - file: FyTok_module_Device.ipynb
       - file: FyTok_module_PhysConcept.ipynb
-      - file: FyTok_plugin.ipynb
-        sections:
-          - file: FyTok_plugin_FyEq.ipynb
-          - file: FyTok_plugin_FyTrans.ipynb
+      - file: FyTok_plugin.md
+      - file: FyTok_plugin_FyEq.ipynb
+      - file: FyTok_plugin_FyTrans.ipynb
 
   - caption: SpDM (SpDB) 数据集成建模
     chapters:
@@ -27,8 +26,8 @@ parts:
           - file: SpDM_Entry_open.ipynb
           - file: SpDM_Entry_File.ipynb
           - file: SpDM_Entry_Database.ipynb
-      - file: SpDM_FunctionClass.ipynb
-      - file: SpDM_View.ipynb    
+      # - file: SpDM_FunctionClass.ipynb
+      # - file: SpDM_View.ipynb    
   
 
   #   file: _api.rst
