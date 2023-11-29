@@ -1,0 +1,90 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: FyTok/SpDM API 参考 （alpha版）
+author: FuYun 开发组
+copyright: 2023 ASIPP
+only_build_toc_files: true
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: off
+
+#######################################################################################
+# Parse and render settings
+parse:
+  myst_enable_extensions: # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+    - amsmath
+    - colon_fence
+    # - deflist
+    - dollarmath
+    # - html_admonition
+    # - html_image
+    - linkify
+    # - replacements
+    # - smartquotes
+    - substitution
+    - tasklist
+  myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
+  myst_dmath_double_inline: true # Allow display math ($$) within an inline context
+  substitutions:
+    FyTok : <font color="orange">_Fy_</font><font color="blue" >__Tok__</font> 
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+  latex_engine: xelatex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/fusion-yun/fytok_tutorial
+  path_to_book: tutorial # Optional path to your book, relative to the repository root
+  branch: master # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+
+sphinx:
+  config:
+    latex_toplevel_sectioning: "part"
+    latex_engine: "xelatex"
+    latex_elements:
+      fontpkg: |
+        \setmainfont[Mapping=tex-text]{Noto Serif CJK SC}
+        \setsansfont[Mapping=tex-text]{Noto Sans CJK SC}
+        \setmonofont{Noto Sans Mono CJK SC}
+
+      preamble: |
+        \usepackage{xeCJK}
+        \XeTeXlinebreaklocale "zh"
+        \XeTeXlinebreakskip = 0pt plus 1pt
+        \usepackage{zhnumber}
+        \usepackage{titlesec}
+        \usepackage{titling}
+        \usepackage{fontspec}
+
+        % Use Chinese numerals for section numbering
+        % \renewcommand\thechapter{\zhnum{chapter}}
+        
+    autosummary_generate: True
+    add_module_names: True
+    
+    # plantuml_latex_output_format: pdf
+
+  extra_extensions:
+    - sphinxcontrib.plantuml
+    - sphinxcontrib.mermaid
+    - sphinx.ext.autodoc
+    - sphinx.ext.autosummary
+    - sphinx.ext.napoleon
+    - sphinx.ext.viewcode
+    - sphinx.ext.inheritance_diagram
+

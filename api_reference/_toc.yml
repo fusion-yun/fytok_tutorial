@@ -1,0 +1,13 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: frontpage
+parts:
+  - caption: FyTok API 参考
+    chapters:
+    - file: FyTok_API.rst
+
+  - caption: SpDM API 参考
+    chapters:
+    - file: SpDM_API.rst
