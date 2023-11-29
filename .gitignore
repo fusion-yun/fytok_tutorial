@@ -145,3 +145,4 @@ VERSION.txt
 # sphinx
 **/_build
 **/_obsolete
+**/output

@@ -9,10 +9,9 @@ parts:
       - file: FyTok_Introduction.md
       - file: FyTok_Installation.ipynb
       - file: FyTok_modules.md
-        sections:
-          - file: FyTok_module_Tokamak.ipynb
-          - file: FyTok_module_Device.ipynb
-          - file: FyTok_module_EqTrans.ipynb
+      - file: FyTok_module_Tokamak.ipynb
+      - file: FyTok_module_Device.ipynb
+      - file: FyTok_module_PhysConcept.ipynb
       - file: FyTok_plugin.ipynb
         sections:
           - file: FyTok_plugin_FyEq.ipynb

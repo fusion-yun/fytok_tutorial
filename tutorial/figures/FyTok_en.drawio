@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="THuYh-ym8cFt9KJ00TGt" name="Page-1">
-        <mxGraphModel dx="1873" dy="1844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2039" dy="1956" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -76,7 +76,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="cIkYoaAPw058XxT0Uyvx-13" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;Data Integration&lt;br style=&quot;font-size: 24px;&quot;&gt;(&lt;i style=&quot;font-size: 24px;&quot;&gt;&lt;b style=&quot;font-size: 24px;&quot;&gt;&lt;font color=&quot;#ff8000&quot; style=&quot;font-size: 24px;&quot;&gt;Sp&lt;/font&gt;&lt;/b&gt;&lt;/i&gt;&lt;font color=&quot;#002fa7&quot; style=&quot;font-size: 24px;&quot;&gt;DB&lt;/font&gt;)&lt;br style=&quot;font-size: 24px;&quot;&gt;&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=none;strokeColor=#7EA6E0;strokeWidth=5;fontSize=24;" parent="1" vertex="1">
+                <mxCell id="cIkYoaAPw058XxT0Uyvx-13" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;Data Integration&lt;br style=&quot;font-size: 24px;&quot;&gt;&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=none;strokeColor=#7EA6E0;strokeWidth=5;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="-310" y="251" width="229" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="cIkYoaAPw058XxT0Uyvx-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=0;strokeWidth=4;fillColor=#e51400;strokeColor=#B20000;fontSize=24;" parent="1" source="cIkYoaAPw058XxT0Uyvx-15" target="cIkYoaAPw058XxT0Uyvx-26" edge="1">
