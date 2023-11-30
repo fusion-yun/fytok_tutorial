@@ -28,7 +28,7 @@ parse:
   myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
   myst_dmath_double_inline: true # Allow display math ($$) within an inline context
   substitutions:
-    FyTok : <font color="orange">_Fy_</font><font color="blue" >__Tok__</font> 
+    FyTok: <font color="orange">_Fy_</font><font color="blue" >__Tok__</font>
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
@@ -37,8 +37,8 @@ latex:
   latex_engine: xelatex
 
 # Add a bibtex file so that we can create citations
-bibtex_bibfiles:
-  - references.bib
+# bibtex_bibfiles:
+#   - references.bib
 
 # Information about where the book exists on the web
 repository:
@@ -73,10 +73,16 @@ sphinx:
 
         % Use Chinese numerals for section numbering
         % \renewcommand\thechapter{\zhnum{chapter}}
-        
-    autosummary_generate: True
-    add_module_names: True
-    
+
+    autodoc_default_options:
+      member-order: "bysource" # In what order to sort the members of the class
+      # special-members: "__init__" # Include special members (e.g. __special__)
+      undoc-members: True # Include members that do not have docstrings
+      exclude-members: "__weakref__" # Exclude members that match the given patterns
+      show-inheritance: True # Show the inheritance tree for each class
+      autosummary_generate: True # Make _autosummary files and include them
+      
+    add_module_names: False # Add the module name to functions/classes etc.
     # plantuml_latex_output_format: pdf
 
   extra_extensions:
@@ -87,4 +93,3 @@ sphinx:
     - sphinx.ext.napoleon
     - sphinx.ext.viewcode
     - sphinx.ext.inheritance_diagram
-

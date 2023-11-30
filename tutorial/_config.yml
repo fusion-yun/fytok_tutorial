@@ -74,8 +74,8 @@ sphinx:
         % Use Chinese numerals for section numbering
         % \renewcommand\thechapter{\zhnum{chapter}}
         
-    autosummary_generate: True
-    add_module_names: True
+    autosummary_generate: False
+    add_module_names: False
     
     # plantuml_latex_output_format: pdf
 

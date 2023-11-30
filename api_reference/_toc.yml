@@ -3,11 +3,7 @@
 
 format: jb-book
 root: frontpage
-parts:
-  - caption: FyTok API 参考
-    chapters:
-    - file: FyTok_API.rst
-
-  - caption: SpDM API 参考
-    chapters:
-    - file: SpDM_API.rst
+chapters:
+    - file: fytok.rst
+    
+    - file: spdm.rst
