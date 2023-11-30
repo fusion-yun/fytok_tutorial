@@ -32,7 +32,7 @@ parse:
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
-    targetname: book.tex
+    targetname: api_reference.tex
 
   latex_engine: xelatex
 
