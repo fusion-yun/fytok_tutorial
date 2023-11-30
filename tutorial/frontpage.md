@@ -11,11 +11,7 @@ myst:
 
 {{SpDM}} 是一个 Python 库，主要包含数据集成、建模和可视化工具。{{SpDM}} 为 {{FyTok}} 提供了物理语义无关的核心功能和基础架构。对于希望添加数据源或物理程序的用户，建议阅读本文档的第二部分 “SpDM (SpDB) 数据集成建模”，了解数据和程序接口，以及辅助工具。
 
-## 本文档的组织结构
 
-```{tableofcontents}
-
-```
 
 ## 名词表
 
@@ -47,6 +43,19 @@ Ontology
 
 URI
   Uniform Resource Identifier
+```
+
+## 获得本文档
+
+  可以通过以下方式获得本文档：
+
+  - git@gitee.com:fusion_yun/fytok_tutorial.git
+  - 
+
+## 本文档的组织结构
+
+```{tableofcontents}
+
 ```
 
 ## 版本信息
