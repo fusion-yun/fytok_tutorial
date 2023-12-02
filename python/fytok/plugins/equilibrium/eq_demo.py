@@ -6,11 +6,14 @@ from fytok.modules.Magnetics import Magnetics
 from fytok.modules.PFActive import PFActive
 from fytok.modules.Equilibrium import Equilibrium
 from fytok.plugins.equilibrium.fy_eq import FyEqAnalyze
+from fytok.modules.Utilities import *
 from spdm.utils.constants import *
 
 
 @Equilibrium.register(["eq_demo"])
 class EquilibriumDemo(FyEqAnalyze):
+    code = {"name": "eq_demo"}
+
     def execute(self, current: Equilibrium.TimeSlice, *previous, working_dir: pathlib.Path):
         super().execute(current, *previous, working_dir=working_dir)
         ####################
