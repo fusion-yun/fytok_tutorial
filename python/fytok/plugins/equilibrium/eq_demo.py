@@ -2,12 +2,13 @@ from __future__ import annotations
 
 import collections.abc
 import pathlib
+from spdm.data.sp_property import sp_tree
 from fytok.modules.Magnetics import Magnetics
 from fytok.modules.TF import TF
 from fytok.modules.Wall import Wall
 from fytok.modules.PFActive import PFActive
 from fytok.modules.Equilibrium import Equilibrium
-from fytok.modules.Utilities import *
+
 
 from fytok.plugins.equilibrium.fy_eq import FyEqAnalyze
 
@@ -15,7 +16,7 @@ from fytok.plugins.equilibrium.fy_eq import FyEqAnalyze
 @Equilibrium.register(["eq_demo"])
 @sp_tree
 class EquilibriumDemo(FyEqAnalyze):
-    code = {"name": "eq_demo", "copyright": "FyTok demo"}
+    code = {"name": "eq_demo", "copyright": "FyTok Demo"}
 
     def execute(self, current: Equilibrium.TimeSlice, *previous, working_dir: pathlib.Path):
         super().execute(current, *previous, working_dir=working_dir)
@@ -23,7 +24,7 @@ class EquilibriumDemo(FyEqAnalyze):
         wall: Wall = self.inputs.get_source("wall")
         magnetics: Magnetics = self.inputs.get_source("magnetics")
         pf_active: PFActive = self.inputs.get_source("pf_active")
-        
+
         ####################
         # 在这里添加，调用外部程序代码
         # 工作目录为 working_dir
