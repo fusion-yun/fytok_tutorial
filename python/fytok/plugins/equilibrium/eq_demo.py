@@ -36,6 +36,7 @@ class EquilibriumDemo(FyEqAnalyze):
             time = current.time
 
             coil_current = [coil.current(time) for coil in pf_active.coil]
+            logger.debug(coil_current)
 
             # flux = [flux_loop.flux(time) for flux_loop in magnetics.flux_loop]
 
