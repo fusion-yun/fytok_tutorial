@@ -3,6 +3,7 @@ import os
 import collections.abc
 import pathlib
 from spdm.data.sp_property import sp_tree
+from spdm.utils.tags import _not_found_
 from fytok.modules.Magnetics import Magnetics
 from fytok.modules.TF import TF
 from fytok.modules.Wall import Wall
@@ -11,13 +12,14 @@ from fytok.modules.Equilibrium import Equilibrium
 from fytok.plugins.equilibrium.fy_eq import FyEqAnalyze
 from fytok.utils.logger import logger
 
+
 @Equilibrium.register(["eq_demo"])
 @sp_tree
 class EquilibriumDemo(FyEqAnalyze):
     code = {"name": "eq_demo", "copyright": "FyTok Demo"}
 
-    def execute(self, current: Equilibrium.TimeSlice, *previous,**kwargs):
-        super().execute(current, *previous,**kwargs)
+    def execute(self, current: Equilibrium.TimeSlice, *previous, **kwargs):
+        super().execute(current, *previous, **kwargs)
         tf: TF = self.inputs.get_source("tf")
         wall: Wall = self.inputs.get_source("wall")
         magnetics: Magnetics = self.inputs.get_source("magnetics")
@@ -28,7 +30,6 @@ class EquilibriumDemo(FyEqAnalyze):
         # 工作目录为 working_dir
 
         with self.working_dir() as current_dir:
-
             logger.debug((pathlib.Path.cwd(), current_dir))
             # res = np.zeros([128, 128])
 
@@ -41,4 +42,3 @@ class EquilibriumDemo(FyEqAnalyze):
         ####################
         # current.update({ ... })
         # current.profiles_2d.psi = ...
-
