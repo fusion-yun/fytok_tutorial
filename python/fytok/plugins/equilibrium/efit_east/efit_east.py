@@ -17,12 +17,13 @@ from fytok.modules.Utilities import *
 from spdm.utils.constants import *
 
 @Equilibrium.register(["efit_east"])
+@sp_tree
 class EquilibriumEFITEAST(FyEqAnalyze):
-    code = {"name": "efit_east", "copyright": "Third-party Plugin for FyTok"}
     """
         EFIT is part of GACODE and use of this module requires a license from GA.
         See https://gacode.io/license.html.
     """
+    code = {"name": "efit_east", "copyright": "Third-party Plugin for FyTok"}
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
