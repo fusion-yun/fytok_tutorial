@@ -146,3 +146,4 @@ VERSION.txt
 **/_build
 **/_obsolete
 **/output
+**/fytok_output/

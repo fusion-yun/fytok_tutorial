@@ -35,6 +35,11 @@ class EquilibriumDemo(FyEqAnalyze):
 
             time = current.time
 
+            shot = getattr(self._root, "shot", self.code.parameters.shot)
+            if shot is None or shot is _not_found_:
+                logger.exception("shot is not defined")
+                raise RuntimeError("shot is not defined")
+
             coil_current = [coil.current(time) for coil in pf_active.coil]
             logger.debug(coil_current)
 
