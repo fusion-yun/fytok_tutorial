@@ -13,7 +13,6 @@ from fytok.plugins.equilibrium.fy_eq import FyEqAnalyze
 from fytok.utils.logger import logger
 
 
-@Equilibrium.register(["eq_demo"])
 @sp_tree
 class EquilibriumDemo(FyEqAnalyze):
     code = {"name": "eq_demo", "copyright": "FyTok Demo"}
@@ -48,3 +47,6 @@ class EquilibriumDemo(FyEqAnalyze):
         ####################
         # current.update({ ... })
         # current.profiles_2d.psi = ...
+
+
+Equilibrium.register(["eq_demo"], EquilibriumDemo)

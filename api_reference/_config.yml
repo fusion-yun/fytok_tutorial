@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: FyTok/SpDM API 参考 （alpha版）
+title: FyTok/SpDM API 参考 
 author: FuYun 开发组
 copyright: 2023 ASIPP
 only_build_toc_files: true

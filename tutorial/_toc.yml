@@ -16,7 +16,7 @@ parts:
       - file: FyTok_plugin_FyEq.ipynb
       - file: FyTok_plugin_FyTrans.ipynb
 
-  - caption: SpDM (SpDB) 数据集成和建模工具
+  - caption: SpDM 数据集成和建模工具
     chapters:
       - file: SpDM_Introduction.md
       - file: SpDM_Installation.ipynb
