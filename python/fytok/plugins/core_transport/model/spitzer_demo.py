@@ -8,7 +8,7 @@ from fytok.modules.CoreProfiles import CoreProfiles
 from fytok.modules.CoreTransport import CoreTransport
 from fytok.modules.Equilibrium import Equilibrium
 from fytok.utils.logger import logger
-from spdm.data.Function import function_like
+from spdm.core.Function import function_like
 from spdm.numlib.misc import array_like
 
 
