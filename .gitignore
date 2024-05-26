@@ -145,5 +145,5 @@ VERSION.txt
 # sphinx
 **/_build
 **/_obsolete
-**/output
+**/output/*
 **/fytok_output/
