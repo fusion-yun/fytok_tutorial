@@ -1,0 +1,34 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: frontpage
+parts:
+  - caption: FyTok 托卡马克模拟器
+    chapters:
+      - file: FyTok_Introduction.md
+      - file: FyTok_Installation.ipynb
+      - file: FyTok_modules.md
+      - file: FyTok_module_Tokamak.ipynb
+      - file: FyTok_module_Device.ipynb
+      - file: FyTok_module_PhysConcept.ipynb
+      - file: FyTok_plugin.md
+      - file: FyTok_plugin_FyEq.ipynb
+      - file: FyTok_plugin_FyTrans.ipynb
+
+  - caption: SpDM 数据集成和建模工具
+    chapters:
+      - file: SpDM_Introduction.md
+      - file: SpDM_Installation.ipynb
+      - file: SpDM_HTree.ipynb
+      - file: SpDM_Entry.ipynb
+        sections:
+          - file: SpDM_Entry_open.ipynb
+          - file: SpDM_Entry_File.ipynb
+          - file: SpDM_Entry_Database.ipynb
+      - file: SpDM_File.ipynb
+      # - file: SpDM_FunctionClass.ipynb
+      # - file: SpDM_View.ipynb    
+  
+
+  #   file: _api.rst
