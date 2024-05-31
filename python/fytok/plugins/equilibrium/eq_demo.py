@@ -8,7 +8,7 @@ from fytok.modules.Magnetics import Magnetics
 from fytok.modules.TF import TF
 from fytok.modules.Wall import Wall
 from fytok.modules.PFActive import PFActive
-from fytok.modules.Equilibrium import Equilibrium
+from fytok.modules.equilibrium import Equilibrium
 from fytok.plugins.equilibrium.fy_eq import FyEqAnalyze
 from fytok.utils.logger import logger
 
