@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "fytok_tutorial"
 
-authors = [{ name = "Zhi YU", email = "yuzhi@ipp.ac.cn" }]
+authors = [{ name = "Zhi YU", email = "yuzhi.student@gmail.com" }]
 
 dynamic = ["version"]
 
@@ -23,9 +23,9 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
 ]
 
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 
-dependencies = ["spdb", "fytok"]
+dependencies = ["spdm", "fytok"]
 
 [tool.setuptools]
 package-dir = { "" = "python" }
