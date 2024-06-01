@@ -4,13 +4,15 @@ FyTok 快速启动
 ## 1. 安装
 - 软件环境
 - 安装
-- 开发环境（本地配置）： vscode，jupyter
+- 开发环境（本地配置）： wsl, vscode，jupyter
 - 源码， issue 
+- pip install fytok
 
 ## 2. case 1: 数据集成： 平衡分析
 - 装置描述 （Device）
 - 平衡文件
 - 可视化
+- freegs plugin
 
 
 ## 3. 开发环境
