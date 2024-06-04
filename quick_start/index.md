@@ -1,4 +1,4 @@
-FyTok 快速启动
+__FyTok__ 快速启动 Quick Start 
 =======================
 
 ## 1. 安装
@@ -8,11 +8,10 @@ FyTok 快速启动
 - 源码， issue 
 - pip install fytok
 
-## 2. case 1: 数据集成： 平衡分析
-- 装置描述 （Device）
+## 2. 数据集成与可视化  case 1: 平衡分析
 - 平衡文件
+- 装置描述 （Device）
 - 可视化
-- freegs plugin
 
 
 ## 3. 开发环境
@@ -20,14 +19,14 @@ FyTok 快速启动
 - jupyter /容器，
 - vscode 远程/wsl
 
-## 4. case 2: 单一模块接入：？？
+## 4. 模块接入 case 2: freegs plugin
 - 物理模块运行机制（Actor）
 - 模块 Plugin 机制
     - Python 原生
     - 松耦合
     - 紧耦合
 
-## 5. case 3: 多模块组合：芯部输运
+## 5.集成计算 case 3: 芯部输运
 - 输运求解
 - Tokamak 类
 - 多 Actor 耦合
