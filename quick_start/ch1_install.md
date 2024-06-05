@@ -2,8 +2,14 @@
 
 ## 建议运行环境
 
-- 语言 Python >= 3.10/3.11 （FyTok 为纯Python包，但物理模块依赖操作系统）
 - 操作系统： Ubuntu 22.04   （模块运行开发环境）
+- 语言 Python  3.11 （FyTok 为纯Python包，但物理模块依赖操作系统）
+
+```
+sudo apt install python3.11
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 100
+sudo update-alternatives --config python3
+```
 
 ### Windows 11 系统解决方案：
 - Windows Subsystem for Linux  （WSL2）
