@@ -5,10 +5,10 @@ import numpy as np
 import scipy.constants
 
 from fytok.modules.core_profiles import CoreProfiles
-from fytok.modules.CoreTransport import CoreTransport
+from fytok.modules.core_transport import CoreTransport
 from fytok.modules.equilibrium import Equilibrium
 from fytok.utils.logger import logger
-from spdm.core.Function import function_like
+from spdm.core.function import function_like
 from spdm.numlib.misc import array_like
 
 

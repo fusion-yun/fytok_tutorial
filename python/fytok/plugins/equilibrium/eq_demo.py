@@ -2,12 +2,12 @@ from __future__ import annotations
 import os
 import collections.abc
 import pathlib
-from spdm.data.sp_property import sp_tree
+from spdm.core.sp_property import sp_tree
 from spdm.utils.tags import _not_found_
-from fytok.modules.Magnetics import Magnetics
-from fytok.modules.TF import TF
-from fytok.modules.Wall import Wall
-from fytok.modules.PFActive import PFActive
+from fytok.modules.magnetics import Magnetics
+from fytok.modules.tf import TF
+from fytok.modules.wall import Wall
+from fytok.modules.pf_active import PFActive
 from fytok.modules.equilibrium import Equilibrium
 from fytok.plugins.equilibrium.fy_eq import FyEqAnalyze
 from fytok.utils.logger import logger
