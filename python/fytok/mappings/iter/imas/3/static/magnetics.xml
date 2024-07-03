@@ -1,0 +1,1647 @@
+<magnetics>
+    <flux_loop id="0">
+      <name>PSC01A</name>
+      <identifier>PSC01A</identifier>
+      <position id="0">
+        <r dtype="float">2.1374</r>
+        <z dtype="float">1.014</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="1">
+      <name>PSC02B</name>
+      <identifier>PSC02B</identifier>
+      <position id="0">
+        <r dtype="float">2.1374</r>
+        <z dtype="float">-1.014</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="2">
+      <name>PSC03A</name>
+      <identifier>PSC03A</identifier>
+      <position id="0">
+        <r dtype="float">2.1374</r>
+        <z dtype="float">3.043</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="3">
+      <name>PSC04B</name>
+      <identifier>PSC04B</identifier>
+      <position id="0">
+        <r dtype="float">2.1374</r>
+        <z dtype="float">-3.043</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="4">
+      <name>PSC05A</name>
+      <identifier>PSC05A</identifier>
+      <position id="0">
+        <r dtype="float">2.1374</r>
+        <z dtype="float">5.071</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="5">
+      <name>PSC06B</name>
+      <identifier>PSC06B</identifier>
+      <position id="0">
+        <r dtype="float">2.1374</r>
+        <z dtype="float">-5.071</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="6">
+      <name>PSC07A</name>
+      <identifier>PSC07A</identifier>
+      <position id="0">
+        <r dtype="float">3.954</r>
+        <z dtype="float">6.9714</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="7">
+      <name>PSC08A</name>
+      <identifier>PSC08A</identifier>
+      <position id="0">
+        <r dtype="float">8.309</r>
+        <z dtype="float">6.173</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="8">
+      <name>PSC09A</name>
+      <identifier>PSC09A</identifier>
+      <position id="0">
+        <r dtype="float">11.5102</r>
+        <z dtype="float">3.265</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="9">
+      <name>PSC10B</name>
+      <identifier>PSC10B</identifier>
+      <position id="0">
+        <r dtype="float">11.5156</r>
+        <z dtype="float">-2.243</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="10">
+      <name>PSC11B</name>
+      <identifier>PSC11B</identifier>
+      <position id="0">
+        <r dtype="float">8.395</r>
+        <z dtype="float">-6.163</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="11">
+      <name>PSC12B</name>
+      <identifier>PSC12B</identifier>
+      <position id="0">
+        <r dtype="float">4.287</r>
+        <z dtype="float">-6.9714</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="12">
+      <name>PSIREF</name>
+      <identifier>PSIREF</identifier>
+      <position id="0">
+        <r dtype="float">3.92079</r>
+        <z dtype="float">0.0</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="13">
+      <name>PSI354</name>
+      <identifier>PSI354</identifier>
+      <position id="0">
+        <r dtype="float">8.56974</r>
+        <z dtype="float">4.59589e-16</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="14">
+      <name>PSI348</name>
+      <identifier>PSI348</identifier>
+      <position id="0">
+        <r dtype="float">8.5311</r>
+        <z dtype="float">0.578105</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="15">
+      <name>PSI343</name>
+      <identifier>PSI343</identifier>
+      <position id="0">
+        <r dtype="float">8.42135</r>
+        <z dtype="float">1.17049</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="16">
+      <name>PSI339</name>
+      <identifier>PSI339</identifier>
+      <position id="0">
+        <r dtype="float">8.25089</r>
+        <z dtype="float">1.78018</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="17">
+      <name>PSI335</name>
+      <identifier>PSI335</identifier>
+      <position id="0">
+        <r dtype="float">8.03228</r>
+        <z dtype="float">2.39343</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="18">
+      <name>PSI330</name>
+      <identifier>PSI330</identifier>
+      <position id="0">
+        <r dtype="float">7.77553</r>
+        <z dtype="float">2.9806</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="19">
+      <name>PSI321</name>
+      <identifier>PSI321</identifier>
+      <position id="0">
+        <r dtype="float">7.48482</r>
+        <z dtype="float">3.50377</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="20">
+      <name>PSI308</name>
+      <identifier>PSI308</identifier>
+      <position id="0">
+        <r dtype="float">7.1582</r>
+        <z dtype="float">3.92823</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="21">
+      <name>PSI293</name>
+      <identifier>PSI293</identifier>
+      <position id="0">
+        <r dtype="float">6.79062</r>
+        <z dtype="float">4.23354</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="22">
+      <name>PSI280</name>
+      <identifier>PSI280</identifier>
+      <position id="0">
+        <r dtype="float">6.37857</r>
+        <z dtype="float">4.41754</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="23">
+      <name>PSI271</name>
+      <identifier>PSI271</identifier>
+      <position id="0">
+        <r dtype="float">5.92902</r>
+        <z dtype="float">4.5025</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="24">
+      <name>PSI266</name>
+      <identifier>PSI266</identifier>
+      <position id="0">
+        <r dtype="float">5.46063</r>
+        <z dtype="float">4.51858</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="25">
+      <name>PSI261</name>
+      <identifier>PSI261</identifier>
+      <position id="0">
+        <r dtype="float">5.00329</r>
+        <z dtype="float">4.49096</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="26">
+      <name>PSI252</name>
+      <identifier>PSI252</identifier>
+      <position id="0">
+        <r dtype="float">4.59314</r>
+        <z dtype="float">4.42783</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="27">
+      <name>PSI230</name>
+      <identifier>PSI230</identifier>
+      <position id="0">
+        <r dtype="float">4.26429</r>
+        <z dtype="float">4.31339</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="28">
+      <name>PSI201</name>
+      <identifier>PSI201</identifier>
+      <position id="0">
+        <r dtype="float">4.03956</r>
+        <z dtype="float">4.10971</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="29">
+      <name>PSI183</name>
+      <identifier>PSI183</identifier>
+      <position id="0">
+        <r dtype="float">3.92363</r>
+        <z dtype="float">3.76766</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="30">
+      <name>PSI177</name>
+      <identifier>PSI177</identifier>
+      <position id="0">
+        <r dtype="float">3.90179</r>
+        <z dtype="float">3.24028</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="31">
+      <name>PSI176</name>
+      <identifier>PSI176</identifier>
+      <position id="0">
+        <r dtype="float">3.93956</r>
+        <z dtype="float">2.50865</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="32">
+      <name>PSI177</name>
+      <identifier>PSI177</identifier>
+      <position id="0">
+        <r dtype="float">3.99563</r>
+        <z dtype="float">1.59237</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="33">
+      <name>PSI179</name>
+      <identifier>PSI179</identifier>
+      <position id="0">
+        <r dtype="float">4.03414</r>
+        <z dtype="float">0.546357</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="34">
+      <name>PSI181</name>
+      <identifier>PSI181</identifier>
+      <position id="0">
+        <r dtype="float">4.03414</r>
+        <z dtype="float">-0.546353</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="35">
+      <name>PSI183</name>
+      <identifier>PSI183</identifier>
+      <position id="0">
+        <r dtype="float">3.99563</r>
+        <z dtype="float">-1.59236</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="36">
+      <name>PSI183</name>
+      <identifier>PSI183</identifier>
+      <position id="0">
+        <r dtype="float">3.93956</r>
+        <z dtype="float">-2.50865</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="37">
+      <name>PSI180</name>
+      <identifier>PSI180</identifier>
+      <position id="0">
+        <r dtype="float">3.90179</r>
+        <z dtype="float">-3.24028</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="38">
+      <name>PSI168</name>
+      <identifier>PSI168</identifier>
+      <position id="0">
+        <r dtype="float">3.92363</r>
+        <z dtype="float">-3.76766</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="39">
+      <name>PSI143</name>
+      <identifier>PSI143</identifier>
+      <position id="0">
+        <r dtype="float">4.03956</r>
+        <z dtype="float">-4.10971</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="40">
+      <name>PSI116</name>
+      <identifier>PSI116</identifier>
+      <position id="0">
+        <r dtype="float">4.26429</r>
+        <z dtype="float">-4.31339</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="41">
+      <name>PSI101</name>
+      <identifier>PSI101</identifier>
+      <position id="0">
+        <r dtype="float">4.59314</r>
+        <z dtype="float">-4.42783</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="42">
+      <name>PSI095</name>
+      <identifier>PSI095</identifier>
+      <position id="0">
+        <r dtype="float">5.00328</r>
+        <z dtype="float">-4.49096</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="43">
+      <name>PSI090</name>
+      <identifier>PSI090</identifier>
+      <position id="0">
+        <r dtype="float">5.46063</r>
+        <z dtype="float">-4.51858</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="44">
+      <name>PSI084</name>
+      <identifier>PSI084</identifier>
+      <position id="0">
+        <r dtype="float">5.92902</r>
+        <z dtype="float">-4.5025</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="45">
+      <name>PSI073</name>
+      <identifier>PSI073</identifier>
+      <position id="0">
+        <r dtype="float">6.37857</r>
+        <z dtype="float">-4.41754</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="46">
+      <name>PSI058</name>
+      <identifier>PSI058</identifier>
+      <position id="0">
+        <r dtype="float">6.79062</r>
+        <z dtype="float">-4.23354</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="47">
+      <name>PSI044</name>
+      <identifier>PSI044</identifier>
+      <position id="0">
+        <r dtype="float">7.1582</r>
+        <z dtype="float">-3.92823</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="48">
+      <name>PSI033</name>
+      <identifier>PSI033</identifier>
+      <position id="0">
+        <r dtype="float">7.48482</r>
+        <z dtype="float">-3.50377</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="49">
+      <name>PSI026</name>
+      <identifier>PSI026</identifier>
+      <position id="0">
+        <r dtype="float">7.77553</r>
+        <z dtype="float">-2.9806</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="50">
+      <name>PSI022</name>
+      <identifier>PSI022</identifier>
+      <position id="0">
+        <r dtype="float">8.03228</r>
+        <z dtype="float">-2.39343</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="51">
+      <name>PSI018</name>
+      <identifier>PSI018</identifier>
+      <position id="0">
+        <r dtype="float">8.25089</r>
+        <z dtype="float">-1.78018</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="52">
+      <name>PSI014</name>
+      <identifier>PSI014</identifier>
+      <position id="0">
+        <r dtype="float">8.42135</r>
+        <z dtype="float">-1.17049</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="53">
+      <name>PSI008</name>
+      <identifier>PSI008</identifier>
+      <position id="0">
+        <r dtype="float">8.5311</r>
+        <z dtype="float">-0.578106</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="54">
+      <name>PSI001</name>
+      <identifier>PSI001</identifier>
+      <position id="0">
+        <r dtype="float">8.56974</r>
+        <z dtype="float">-2.05636e-06</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="55">
+      <name>PSM360</name>
+      <identifier>PSM360</identifier>
+      <position id="0">
+        <r dtype="float">10.4991</r>
+        <z dtype="float">6.30808e-16</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="56">
+      <name>PSM356</name>
+      <identifier>PSM356</identifier>
+      <position id="0">
+        <r dtype="float">10.4594</r>
+        <z dtype="float">0.601476</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="57">
+      <name>PSM350</name>
+      <identifier>PSM350</identifier>
+      <position id="0">
+        <r dtype="float">10.3535</r>
+        <z dtype="float">1.21194</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="58">
+      <name>PSM346</name>
+      <identifier>PSM346</identifier>
+      <position id="0">
+        <r dtype="float">10.1827</r>
+        <z dtype="float">1.83685</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="59">
+      <name>PSM343</name>
+      <identifier>PSM343</identifier>
+      <position id="0">
+        <r dtype="float">9.95538</r>
+        <z dtype="float">2.4747</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="60">
+      <name>PSM340</name>
+      <identifier>PSM340</identifier>
+      <position id="0">
+        <r dtype="float">9.68458</r>
+        <z dtype="float">3.11548</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="61">
+      <name>PSM337</name>
+      <identifier>PSM337</identifier>
+      <position id="0">
+        <r dtype="float">9.37292</r>
+        <z dtype="float">3.74071</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="62">
+      <name>PSM333</name>
+      <identifier>PSM333</identifier>
+      <position id="0">
+        <r dtype="float">9.02914</r>
+        <z dtype="float">4.32923</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="63">
+      <name>PSM328</name>
+      <identifier>PSM328</identifier>
+      <position id="0">
+        <r dtype="float">8.65336</r>
+        <z dtype="float">4.85884</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="64">
+      <name>PSM321</name>
+      <identifier>PSM321</identifier>
+      <position id="0">
+        <r dtype="float">8.24093</r>
+        <z dtype="float">5.30346</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="65">
+      <name>PSM311</name>
+      <identifier>PSM311</identifier>
+      <position id="0">
+        <r dtype="float">7.79199</r>
+        <z dtype="float">5.65987</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="66">
+      <name>PSM300</name>
+      <identifier>PSM300</identifier>
+      <position id="0">
+        <r dtype="float">7.29919</r>
+        <z dtype="float">5.91452</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="67">
+      <name>PSM288</name>
+      <identifier>PSM288</identifier>
+      <position id="0">
+        <r dtype="float">6.76575</r>
+        <z dtype="float">6.0804</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="68">
+      <name>PSM279</name>
+      <identifier>PSM279</identifier>
+      <position id="0">
+        <r dtype="float">6.19807</r>
+        <z dtype="float">6.17212</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="69">
+      <name>PSM272</name>
+      <identifier>PSM272</identifier>
+      <position id="0">
+        <r dtype="float">5.60714</r>
+        <z dtype="float">6.20192</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="70">
+      <name>PSM268</name>
+      <identifier>PSM268</identifier>
+      <position id="0">
+        <r dtype="float">5.01505</r>
+        <z dtype="float">6.19363</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="71">
+      <name>PSM264</name>
+      <identifier>PSM264</identifier>
+      <position id="0">
+        <r dtype="float">4.44643</r>
+        <z dtype="float">6.15485</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="72">
+      <name>PSM260</name>
+      <identifier>PSM260</identifier>
+      <position id="0">
+        <r dtype="float">3.92982</r>
+        <z dtype="float">6.08781</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="73">
+      <name>PSM252</name>
+      <identifier>PSM252</identifier>
+      <position id="0">
+        <r dtype="float">3.48404</r>
+        <z dtype="float">5.98563</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="74">
+      <name>PSM236</name>
+      <identifier>PSM236</identifier>
+      <position id="0">
+        <r dtype="float">3.14252</r>
+        <z dtype="float">5.81907</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="75">
+      <name>PSM214</name>
+      <identifier>PSM214</identifier>
+      <position id="0">
+        <r dtype="float">2.90058</r>
+        <z dtype="float">5.56892</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="76">
+      <name>PSM194</name>
+      <identifier>PSM194</identifier>
+      <position id="0">
+        <r dtype="float">2.76344</r>
+        <z dtype="float">5.2011</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="77">
+      <name>PSM182</name>
+      <identifier>PSM182</identifier>
+      <position id="0">
+        <r dtype="float">2.71922</r>
+        <z dtype="float">4.68484</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="78">
+      <name>PSM177</name>
+      <identifier>PSM177</identifier>
+      <position id="0">
+        <r dtype="float">2.73981</r>
+        <z dtype="float">4.01869</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="79">
+      <name>PSM176</name>
+      <identifier>PSM176</identifier>
+      <position id="0">
+        <r dtype="float">2.80292</r>
+        <z dtype="float">3.18223</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="80">
+      <name>PSM176</name>
+      <identifier>PSM176</identifier>
+      <position id="0">
+        <r dtype="float">2.87402</r>
+        <z dtype="float">2.21114</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="81">
+      <name>PSM177</name>
+      <identifier>PSM177</identifier>
+      <position id="0">
+        <r dtype="float">2.92952</r>
+        <z dtype="float">1.13465</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="82">
+      <name>PSM179</name>
+      <identifier>PSM179</identifier>
+      <position id="0">
+        <r dtype="float">2.94869</r>
+        <z dtype="float">0.0</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="83">
+      <name>PSM181</name>
+      <identifier>PSM181</identifier>
+      <position id="0">
+        <r dtype="float">2.92952</r>
+        <z dtype="float">-1.13465</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="84">
+      <name>PSM182</name>
+      <identifier>PSM182</identifier>
+      <position id="0">
+        <r dtype="float">2.87402</r>
+        <z dtype="float">-2.21113</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="85">
+      <name>PSM183</name>
+      <identifier>PSM183</identifier>
+      <position id="0">
+        <r dtype="float">2.80292</r>
+        <z dtype="float">-3.18223</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="86">
+      <name>PSM183</name>
+      <identifier>PSM183</identifier>
+      <position id="0">
+        <r dtype="float">2.73981</r>
+        <z dtype="float">-4.01869</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="87">
+      <name>PSM180</name>
+      <identifier>PSM180</identifier>
+      <position id="0">
+        <r dtype="float">2.71922</r>
+        <z dtype="float">-4.68484</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="88">
+      <name>PSM173</name>
+      <identifier>PSM173</identifier>
+      <position id="0">
+        <r dtype="float">2.76344</r>
+        <z dtype="float">-5.20111</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="89">
+      <name>PSM159</name>
+      <identifier>PSM159</identifier>
+      <position id="0">
+        <r dtype="float">2.90058</r>
+        <z dtype="float">-5.56892</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="90">
+      <name>PSM137</name>
+      <identifier>PSM137</identifier>
+      <position id="0">
+        <r dtype="float">3.14252</r>
+        <z dtype="float">-5.81907</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="91">
+      <name>PSM116</name>
+      <identifier>PSM116</identifier>
+      <position id="0">
+        <r dtype="float">3.48404</r>
+        <z dtype="float">-5.98563</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="92">
+      <name>PSM104</name>
+      <identifier>PSM104</identifier>
+      <position id="0">
+        <r dtype="float">3.92982</r>
+        <z dtype="float">-6.08781</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="93">
+      <name>PSM097</name>
+      <identifier>PSM097</identifier>
+      <position id="0">
+        <r dtype="float">4.44643</r>
+        <z dtype="float">-6.15485</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="94">
+      <name>PSM094</name>
+      <identifier>PSM094</identifier>
+      <position id="0">
+        <r dtype="float">5.01505</r>
+        <z dtype="float">-6.19363</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="95">
+      <name>PSM090</name>
+      <identifier>PSM090</identifier>
+      <position id="0">
+        <r dtype="float">5.60714</r>
+        <z dtype="float">-6.20192</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="96">
+      <name>PSM085</name>
+      <identifier>PSM085</identifier>
+      <position id="0">
+        <r dtype="float">6.19807</r>
+        <z dtype="float">-6.17212</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="97">
+      <name>PSM077</name>
+      <identifier>PSM077</identifier>
+      <position id="0">
+        <r dtype="float">6.76575</r>
+        <z dtype="float">-6.0804</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="98">
+      <name>PSM067</name>
+      <identifier>PSM067</identifier>
+      <position id="0">
+        <r dtype="float">7.29919</r>
+        <z dtype="float">-5.91452</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="99">
+      <name>PSM055</name>
+      <identifier>PSM055</identifier>
+      <position id="0">
+        <r dtype="float">7.79199</r>
+        <z dtype="float">-5.65986</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="100">
+      <name>PSM044</name>
+      <identifier>PSM044</identifier>
+      <position id="0">
+        <r dtype="float">8.24093</r>
+        <z dtype="float">-5.30346</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="101">
+      <name>PSM035</name>
+      <identifier>PSM035</identifier>
+      <position id="0">
+        <r dtype="float">8.65336</r>
+        <z dtype="float">-4.85884</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="102">
+      <name>PSM029</name>
+      <identifier>PSM029</identifier>
+      <position id="0">
+        <r dtype="float">9.02914</r>
+        <z dtype="float">-4.32923</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="103">
+      <name>PSM024</name>
+      <identifier>PSM024</identifier>
+      <position id="0">
+        <r dtype="float">9.37292</r>
+        <z dtype="float">-3.74072</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="104">
+      <name>PSM021</name>
+      <identifier>PSM021</identifier>
+      <position id="0">
+        <r dtype="float">9.68458</r>
+        <z dtype="float">-3.11548</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="105">
+      <name>PSM018</name>
+      <identifier>PSM018</identifier>
+      <position id="0">
+        <r dtype="float">9.95538</r>
+        <z dtype="float">-2.4747</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="106">
+      <name>PSM015</name>
+      <identifier>PSM015</identifier>
+      <position id="0">
+        <r dtype="float">10.1827</r>
+        <z dtype="float">-1.83685</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="107">
+      <name>PSM011</name>
+      <identifier>PSM011</identifier>
+      <position id="0">
+        <r dtype="float">10.3535</r>
+        <z dtype="float">-1.21194</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="108">
+      <name>PSM007</name>
+      <identifier>PSM007</identifier>
+      <position id="0">
+        <r dtype="float">10.4594</r>
+        <z dtype="float">-0.601474</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <flux_loop id="109">
+      <name>PSM001</name>
+      <identifier>PSM001</identifier>
+      <position id="0">
+        <r dtype="float">10.4991</r>
+        <z dtype="float">-6.30808e-16</z>
+      </position>
+      <type>
+        <index>1</index>
+      </type>
+    </flux_loop>
+    <b_field_pol_probe id="0">
+      <name>MPI360</name>
+      <identifier>MPI360</identifier>
+      <position>
+        <r dtype="float">8.49808</r>
+        <z dtype="float">4.50577e-16</z>
+      </position>
+      <length>0.522731</length>
+      <poloidal_angle>-1.5707963267948966</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="1">
+      <name>MPI351</name>
+      <identifier>MPI351</identifier>
+      <position>
+        <r dtype="float">8.41877</r>
+        <z dtype="float">0.83404</z>
+      </position>
+      <length>0.51382</length>
+      <poloidal_angle>-1.7243922822874056</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="2">
+      <name>MPI343</name>
+      <identifier>MPI343</identifier>
+      <position>
+        <r dtype="float">8.19946</r>
+        <z dtype="float">1.70215</z>
+      </position>
+      <length>0.521246</length>
+      <poloidal_angle>-1.8579029887479637</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="3">
+      <name>MPI337</name>
+      <identifier>MPI337</identifier>
+      <position>
+        <r dtype="float">7.87648</r>
+        <z dtype="float">2.57776</z>
+      </position>
+      <length>0.51382</length>
+      <poloidal_angle>-1.9573169429415607</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="4">
+      <name>MPI330</name>
+      <identifier>MPI330</identifier>
+      <position>
+        <r dtype="float">7.47704</r>
+        <z dtype="float">3.36654</z>
+      </position>
+      <length>0.51382</length>
+      <poloidal_angle>-2.09298138569908</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="5">
+      <name>MPI315</name>
+      <identifier>MPI315</identifier>
+      <position>
+        <r dtype="float">7.00227</r>
+        <z dtype="float">3.95852</z>
+      </position>
+      <length>0.377198</length>
+      <poloidal_angle>-2.351202848531641</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="6">
+      <name>MPI293</name>
+      <identifier>MPI293</identifier>
+      <position>
+        <r dtype="float">6.4392</r>
+        <z dtype="float">4.29949</z>
+      </position>
+      <length>0.490431</length>
+      <poloidal_angle>-2.733953553493998</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="7">
+      <name>MPI275</name>
+      <identifier>MPI275</identifier>
+      <position>
+        <r dtype="float">5.79501</r>
+        <z dtype="float">4.42325</z>
+      </position>
+      <length>0.490431</length>
+      <poloidal_angle>-3.0436622292603914</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="8">
+      <name>MPI266</name>
+      <identifier>MPI266</identifier>
+      <position>
+        <r dtype="float">5.12597</r>
+        <z dtype="float">4.41457</z>
+      </position>
+      <length>0.410982</length>
+      <poloidal_angle>-3.2006371421847617</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="9">
+      <name>MPI257</name>
+      <identifier>MPI257</identifier>
+      <position>
+        <r dtype="float">4.53325</r>
+        <z dtype="float">4.32669</z>
+      </position>
+      <length>0.410982</length>
+      <poloidal_angle>-3.3523062541830684</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="10">
+      <name>MPI230</name>
+      <identifier>MPI230</identifier>
+      <position>
+        <r dtype="float">4.12173</r>
+        <z dtype="float">4.11467</z>
+      </position>
+      <length>0.410982</length>
+      <poloidal_angle>-3.8272801568208057</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="11">
+      <name>MPI190</name>
+      <identifier>MPI190</identifier>
+      <position>
+        <r dtype="float">3.9378</r>
+        <z dtype="float">3.64549</z>
+      </position>
+      <length>0.575449</length>
+      <poloidal_angle>-4.522008465577148</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="12">
+      <name>MPI177</name>
+      <identifier>MPI177</identifier>
+      <position>
+        <r dtype="float">3.93862</r>
+        <z dtype="float">2.78912</z>
+      </position>
+      <length>0.410982</length>
+      <poloidal_angle>-4.756650530215266</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="13">
+      <name>MPI176</name>
+      <identifier>MPI176</identifier>
+      <position>
+        <r dtype="float">4.01545</r>
+        <z dtype="float">1.52596</z>
+      </position>
+      <length>0.490431</length>
+      <poloidal_angle>-4.769653233142623</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="14">
+      <name>MPI179</name>
+      <identifier>MPI179</identifier>
+      <position>
+        <r dtype="float">4.05665</r>
+        <z dtype="float">0.0</z>
+      </position>
+      <length>0.523102</length>
+      <poloidal_angle>-4.721674132005299</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="15">
+      <name>MPI182</name>
+      <identifier>MPI182</identifier>
+      <position>
+        <r dtype="float">4.01545</r>
+        <z dtype="float">-1.52595</z>
+      </position>
+      <length>0.51382</length>
+      <poloidal_angle>-4.667411845560795</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="16">
+      <name>MPI183</name>
+      <identifier>MPI183</identifier>
+      <position>
+        <r dtype="float">3.93862</r>
+        <z dtype="float">-2.78912</z>
+      </position>
+      <length>0.522731</length>
+      <poloidal_angle>-4.651267549979848</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="17">
+      <name>MPI175</name>
+      <identifier>MPI175</identifier>
+      <position>
+        <r dtype="float">3.9378</r>
+        <z dtype="float">-3.64549</z>
+      </position>
+      <length>0.51382</length>
+      <poloidal_angle>-4.78309226838298</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="18">
+      <name>MPI143</name>
+      <identifier>MPI143</identifier>
+      <position>
+        <r dtype="float">4.12173</r>
+        <z dtype="float">-4.11467</z>
+      </position>
+      <length>0.51382</length>
+      <poloidal_angle>-5.344739221674755</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="19">
+      <name>MPI107</name>
+      <identifier>MPI107</identifier>
+      <position>
+        <r dtype="float">4.53325</r>
+        <z dtype="float">-4.32669</z>
+      </position>
+      <length>0.377198</length>
+      <poloidal_angle>-5.976112078583704</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="20">
+      <name>MPI095</name>
+      <identifier>MPI095</identifier>
+      <position>
+        <r dtype="float">5.12597</r>
+        <z dtype="float">-4.41457</z>
+      </position>
+      <length>0.51382</length>
+      <poloidal_angle>-6.185935561258462</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="21">
+      <name>MPI088</name>
+      <identifier>MPI088</identifier>
+      <position>
+        <r dtype="float">5.79501</r>
+        <z dtype="float">-4.42325</z>
+      </position>
+      <length>0.51382</length>
+      <poloidal_angle>-0.034856319557429155</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="22">
+      <name>MPI073</name>
+      <identifier>MPI073</identifier>
+      <position>
+        <r dtype="float">6.4392</r>
+        <z dtype="float">-4.29949</z>
+      </position>
+      <length>0.51382</length>
+      <poloidal_angle>-0.29013131754677335</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="23">
+      <name>MPI051</name>
+      <identifier>MPI051</identifier>
+      <position>
+        <r dtype="float">7.00227</r>
+        <z dtype="float">-3.95851</z>
+      </position>
+      <length>0.410982</length>
+      <poloidal_angle>-0.6742538513011974</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="24">
+      <name>MPI033</name>
+      <identifier>MPI033</identifier>
+      <position>
+        <r dtype="float">7.47704</r>
+        <z dtype="float">-3.36654</z>
+      </position>
+      <length>0.410982</length>
+      <poloidal_angle>-0.9826325861775715</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="25">
+      <name>MPI024</name>
+      <identifier>MPI024</identifier>
+      <position>
+        <r dtype="float">7.87648</r>
+        <z dtype="float">-2.57776</z>
+      </position>
+      <length>0.410982</length>
+      <poloidal_angle>-1.148691937858572</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="26">
+      <name>MPI018</name>
+      <identifier>MPI018</identifier>
+      <position>
+        <r dtype="float">8.19946</r>
+        <z dtype="float">-1.70215</z>
+      </position>
+      <length>0.578048</length>
+      <poloidal_angle>-1.2507291219179166</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="27">
+      <name>MPI011</name>
+      <identifier>MPI011</identifier>
+      <position>
+        <r dtype="float">8.41877</r>
+        <z dtype="float">-0.834039</z>
+      </position>
+      <length>0.410982</length>
+      <poloidal_angle>-1.3676522191675204</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+    <b_field_pol_probe id="28">
+      <name>MPI001</name>
+      <identifier>MPI001</identifier>
+      <position>
+        <r dtype="float">8.49808</r>
+        <z dtype="float">-4.50577e-16</z>
+      </position>
+      <length>0.490431</length>
+      <poloidal_angle>-1.539642199646798</poloidal_angle>
+      <toroidal_angle>0.0</toroidal_angle>
+      <type>
+        <index>1</index>
+      </type>
+      <turns>1</turns>
+    </b_field_pol_probe>
+</magnetics>
