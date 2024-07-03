@@ -13,7 +13,7 @@
       "justMyCode": false,
       "cwd": "${workspaceFolder}/../output",
       "env": {
-        "PYTHONPATH": "${workspaceFolder}/../spdm/python:${workspaceFolder}/..fytok/python:${workspaceFolder}/../fytok_ext/python"
+        "PYTHONPATH": "${workspaceFolder}/../spdm/python:${workspaceFolder}/..fytok/python:${workspaceFolder}/../fytok_ext/python:${workspaceFolder}/python"
       }
     }
   ]
