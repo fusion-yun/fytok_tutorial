@@ -28,7 +28,7 @@ requires-python = ">=3.11"
 dependencies = ["spdm", "fytok"]
 
 [tool.setuptools]
-package-dir = { "" = "python" }
+package-dir = {  }
 
 [tool.setuptools.packages.find]
 where = ["python"]
@@ -43,3 +43,4 @@ namespaces = true
 
 [tool.setuptools.dynamic]
 version = { file = "VERSION" }
+

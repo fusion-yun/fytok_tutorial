@@ -1,8 +1,5 @@
 {
   "python.envFile": "${workspaceFolder}/.env",
-  "python.testing.unittestEnabled": true,
-  "python.testing.unittestArgs": ["-v", "-s", "./tests", "-p", "test_*.py"],
-  "pylint.args": ["--rcfile=${workspaceFolder}/.pylintrc"],
   "[python]": {
     "editor.rulers": [120],
     "editor.tabSize": 4,

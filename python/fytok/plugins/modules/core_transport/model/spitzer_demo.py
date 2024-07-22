@@ -1,50 +1,59 @@
-import collections
-import collections.abc
-import pathlib
+import typing
 import numpy as np
 import scipy.constants
 
-from fytok.modules.core_profiles import CoreProfiles
-from fytok.modules.core_transport import CoreTransport
+from spdm.core.function import Function
+
 from fytok.modules.equilibrium import Equilibrium
+from fytok.modules.core_profiles import CoreProfiles
+from fytok.modules.core_transport import CoreTransportModel
+from fytok.modules.utilities import CoreRadialGrid
 from fytok.utils.logger import logger
-from spdm.core.function import function_like
-from spdm.numlib.misc import array_like
 
 
-@CoreTransport.Model.register(["spitzer"])
-class SpitzerDemo(CoreTransport.Model):
-    def execute(self, current: CoreTransport.Model.TimeSlice, *previous, working_dir: pathlib.Path = None):
-        
-        super().execute(current, *previous, working_dir=working_dir)
+class SpitzerDemo(
+    CoreTransportModel,
+    category="neoclassical",
+    code={"name": "spitzer_demo"},
+):
+    """Spitzer resistivity model"""
 
-        equilibrium: Equilibrium.TimeSlice = self.inputs.get_source("equilibrium").time_slice.current
+    class InPorts(CoreTransportModel.InPorts):
+        pass
 
-        core_profiles_1d: CoreProfiles.TimeSlice.Profiles1D = self.inputs.get_source(
-            "core_profiles"
-        ).time_slice.current.profiles_1d
+    def execute(
+        self, *args, equilibrium: Equilibrium, core_profiles: CoreProfiles, **kwargs
+    ) -> typing.Self:
 
-        eV = scipy.constants.electron_volt
+        res: CoreTransportModel = super().execute(
+            *args, equilibrium=equilibrium, core_profiles=core_profiles, **kwargs
+        )
 
-        radial_grid = core_profiles_1d.grid
+        eq1d: Equilibrium.Profiles1D = equilibrium.profiles_1d
 
-        B0 = equilibrium.vacuum_toroidal_field.b0
-        R0 = equilibrium.vacuum_toroidal_field.r0
+        prof1d: CoreProfiles.Profiles1D = core_profiles.profiles_1d
+
+        radial_grid: CoreRadialGrid = res.profiles_1d.grid
 
         rho_tor_norm = radial_grid.rho_tor_norm
         rho_tor = radial_grid.rho_tor
         psi_norm = radial_grid.psi_norm
-        psi_axis = equilibrium.global_quantities.psi_axis
-        psi_boundary = equilibrium.global_quantities.psi_boundary
-        psi = psi_norm * (psi_boundary - psi_axis) + psi_axis
+        psi = radial_grid.psi
+        psi_axis = radial_grid.psi_axis
+        psi_boundary = radial_grid.psi_boundary
 
-        q = equilibrium.profiles_1d.q(psi)
+        B0 = res.vacuum_toroidal_field.b0
+        R0 = res.vacuum_toroidal_field.r0
+
+        eV = scipy.constants.electron_volt
+
+        q = eq1d.q(psi_norm)
 
         # Tavg = np.sum([ion.density*ion.temperature for ion in core_profile.ion]) / \
         #     np.sum([ion.density for ion in core_profile.ion])
 
-        Te = core_profiles_1d.electrons.temperature(rho_tor_norm)
-        Ne = core_profiles_1d.electrons.density(rho_tor_norm)
+        Te = prof1d.electrons.temperature(rho_tor_norm)
+        Ne = prof1d.electrons.density(rho_tor_norm)
         # Pe = core_profile.electrons.pressure(rho_tor_norm)
 
         # Coulomb logarithm
@@ -54,7 +63,7 @@ class SpitzerDemo(CoreTransport.Model):
         # (17.3 - 0.5*np.log(Ne/1e20) + 1.5*np.log(Te/1000))*(Te >= 10)
 
         # lnCoul = 14
-        lnCoul = core_profiles_1d.coulomb_logarithm(rho_tor_norm)
+        lnCoul = prof1d.coulomb_logarithm(rho_tor_norm)
 
         # electron collision time , eq 14.6.1
         tau_e = 1.09e16 * ((Te / 1000) ** (3 / 2)) / Ne / lnCoul
@@ -73,8 +82,10 @@ class SpitzerDemo(CoreTransport.Model):
         #  Sec 14.10 Resistivity
         #
         eta_s = 1.65e-9 * lnCoul * (Te / 1000) ** (-3 / 2)
-        Zeff = core_profiles_1d.zeff(rho_tor_norm)
-        fT = 1.0 - (1 - epsilon) ** 2 / np.sqrt(1.0 - epsilon**2) / (1 + 1.46 * np.sqrt(epsilon))
+        Zeff = prof1d.zeff(rho_tor_norm)
+        fT = 1.0 - (1 - epsilon) ** 2 / np.sqrt(1.0 - epsilon**2) / (
+            1 + 1.46 * np.sqrt(epsilon)
+        )
 
         phi = np.zeros_like(rho_tor_norm)
         nu_e = R0 * q[1:] / vTe[1:] / tau_e[1:] / epsilon32[1:]
@@ -83,6 +94,15 @@ class SpitzerDemo(CoreTransport.Model):
 
         C = 0.56 / Zeff * (3.0 - Zeff) / (3.0 + Zeff)
 
-        eta = eta_s * Zeff / (1 - phi) / (1.0 - C * phi) * (1.0 + 0.27 * (Zeff - 1.0)) / (1.0 + 0.47 * (Zeff - 1.0))
+        eta = (
+            eta_s
+            * Zeff
+            / (1 - phi)
+            / (1.0 - C * phi)
+            * (1.0 + 0.27 * (Zeff - 1.0))
+            / (1.0 + 0.47 * (Zeff - 1.0))
+        )
 
-        current.profiles_1d["conductivity_parallel"] = function_like(array_like(rho_tor_norm, 1.0 / eta), rho_tor_norm)
+        res.profiles_1d.conductivity_parallel = 1.0 / eta
+
+        return res
