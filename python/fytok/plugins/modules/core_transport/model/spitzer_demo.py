@@ -2,6 +2,7 @@ import typing
 import numpy as np
 import scipy.constants
 
+from spdm.utils.type_hint import array_type
 from fytok.utils.logger import logger
 
 from fytok.modules.equilibrium import Equilibrium
@@ -21,7 +22,7 @@ class SpitzerDemo(
         self, *args, equilibrium: Equilibrium, core_profiles: CoreProfiles, **kwargs
     ) -> typing.Self:
 
-        res: CoreTransportModel = super().execute(
+        res: typing.Self = super().execute(
             *args, equilibrium=equilibrium, core_profiles=core_profiles, **kwargs
         )
 
@@ -49,7 +50,7 @@ class SpitzerDemo(
         #     np.sum([ion.density for ion in core_profile.ion])
 
         Te = prof1d.electrons.temperature(rho_tor_norm)
-        Ne = prof1d.electrons.density(rho_tor_norm)
+        ne = prof1d.electrons.density(rho_tor_norm)
         # Pe = core_profile.electrons.pressure(rho_tor_norm)
 
         # Coulomb logarithm
@@ -59,10 +60,10 @@ class SpitzerDemo(
         # (17.3 - 0.5*np.log(Ne/1e20) + 1.5*np.log(Te/1000))*(Te >= 10)
 
         # lnCoul = 14
-        lnCoul = prof1d.coulomb_logarithm(rho_tor_norm)
+        ln_coul = prof1d.coulomb_logarithm(rho_tor_norm)
 
         # electron collision time , eq 14.6.1
-        tau_e = 1.09e16 * ((Te / 1000) ** (3 / 2)) / Ne / lnCoul
+        tau_e = 1.09e16 * ((Te / 1000) ** (3 / 2)) / ne / ln_coul
 
         vTe = np.sqrt(Te * eV / scipy.constants.electron_mass)
 
@@ -72,13 +73,13 @@ class SpitzerDemo(
         # rho_tor[0] = max(rho_e[0], rho_tor[0])
 
         epsilon = rho_tor / R0
-        epsilon12 = np.sqrt(epsilon)
+        # epsilon12 = np.sqrt(epsilon)
         epsilon32 = epsilon ** (3 / 2)
         ###########################################################################################
         #  Sec 14.10 Resistivity
         #
-        eta_s = 1.65e-9 * lnCoul * (Te / 1000) ** (-3 / 2)
-        Zeff = prof1d.zeff(rho_tor_norm)
+        eta_s = 1.65e-9 * (ln_coul * (Te / 1000) ** (-3.0 / 2.0))
+        Zeff = np.asarray(prof1d.zeff(rho_tor_norm))
         fT = 1.0 - (1 - epsilon) ** 2 / np.sqrt(1.0 - epsilon**2) / (
             1 + 1.46 * np.sqrt(epsilon)
         )
