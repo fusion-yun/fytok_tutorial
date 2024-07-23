@@ -2,13 +2,12 @@ import typing
 import numpy as np
 import scipy.constants
 
-from spdm.core.function import Function
+from fytok.utils.logger import logger
 
 from fytok.modules.equilibrium import Equilibrium
 from fytok.modules.core_profiles import CoreProfiles
 from fytok.modules.core_transport import CoreTransportModel
 from fytok.modules.utilities import CoreRadialGrid
-from fytok.utils.logger import logger
 
 
 class SpitzerDemo(
@@ -17,9 +16,6 @@ class SpitzerDemo(
     code={"name": "spitzer_demo"},
 ):
     """Spitzer resistivity model"""
-
-    class InPorts(CoreTransportModel.InPorts):
-        pass
 
     def execute(
         self, *args, equilibrium: Equilibrium, core_profiles: CoreProfiles, **kwargs
