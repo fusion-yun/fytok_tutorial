@@ -18,11 +18,11 @@ class SpitzerDemo(
 ):
     """Spitzer resistivity model"""
 
-    def execute(
+    def refresh(
         self, *args, equilibrium: Equilibrium, core_profiles: CoreProfiles, **kwargs
     ) -> typing.Self:
 
-        res: typing.Self = super().execute(
+        res: typing.Self = super().refresh(
             *args, equilibrium=equilibrium, core_profiles=core_profiles, **kwargs
         )
 
