@@ -18,11 +18,11 @@ class SpitzerDemo(
 ):
     """Spitzer resistivity model"""
 
-    def refresh(
+    def execute(
         self, *args, equilibrium: Equilibrium, core_profiles: CoreProfiles, **kwargs
     ) -> typing.Self:
 
-        res: typing.Self = super().refresh(
+        res: typing.Self = super().execute(
             *args, equilibrium=equilibrium, core_profiles=core_profiles, **kwargs
         )
 
@@ -35,9 +35,9 @@ class SpitzerDemo(
         rho_tor_norm = radial_grid.rho_tor_norm
         rho_tor = radial_grid.rho_tor
         psi_norm = radial_grid.psi_norm
-        psi = radial_grid.psi
-        psi_axis = radial_grid.psi_axis
-        psi_boundary = radial_grid.psi_boundary
+        # psi = radial_grid.psi
+        # psi_axis = radial_grid.psi_axis
+        # psi_boundary = radial_grid.psi_boundary
 
         B0 = res.vacuum_toroidal_field.b0
         R0 = res.vacuum_toroidal_field.r0
