@@ -2,18 +2,15 @@ import typing
 import numpy as np
 import scipy.constants
 
-from spdm.utils.type_hint import array_type
-from fytok.utils.logger import logger
-
 from fytok.modules.equilibrium import Equilibrium
 from fytok.modules.core_profiles import CoreProfiles
-from fytok.modules.core_transport import CoreTransportModel
+from fytok.modules.core_transport import CoreTransport
 from fytok.modules.utilities import CoreRadialGrid
 
 
 class SpitzerDemo(
-    CoreTransportModel,
-    category="neoclassical",
+    CoreTransport.Model,
+    identifier="neoclassical",
     code={"name": "spitzer_demo"},
 ):
     """Spitzer resistivity model"""
@@ -23,7 +20,10 @@ class SpitzerDemo(
     ) -> typing.Self:
 
         res: typing.Self = super().execute(
-            *args, equilibrium=equilibrium, core_profiles=core_profiles, **kwargs
+            *args,
+            equilibrium=equilibrium,
+            core_profiles=core_profiles,
+            **kwargs,
         )
 
         eq1d: Equilibrium.Profiles1D = equilibrium.profiles_1d
@@ -35,9 +35,6 @@ class SpitzerDemo(
         rho_tor_norm = radial_grid.rho_tor_norm
         rho_tor = radial_grid.rho_tor
         psi_norm = radial_grid.psi_norm
-        # psi = radial_grid.psi
-        # psi_axis = radial_grid.psi_axis
-        # psi_boundary = radial_grid.psi_boundary
 
         B0 = res.vacuum_toroidal_field.b0
         R0 = res.vacuum_toroidal_field.r0

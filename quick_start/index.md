@@ -1,39 +1,34 @@
 __FyTok__ 快速启动 Quick Start 
 =======================
 
-## 1. 安装
+## 安装
 - 软件环境
 - 安装
 - 开发环境（本地配置）： wsl, vscode，jupyter
 - 源码， issue 
 - pip install fytok
 
-## 2. 数据集成与可视化  case 1: 平衡分析
+## case 1: 数据集成与可视化   平衡分析
 - 平衡文件
 - 装置描述 （Device）
 - 可视化
 
+## case 2: 数据绑定，程序插件
 
-## 3. 开发环境
-- docker
-- jupyter /容器，
-- vscode 远程/wsl
-
-## 4. 模块接入 case 2: freegs plugin
-- 物理模块运行机制（Actor）
+- 物理模块运行机制
 - 模块 Plugin 机制
     - Python 原生
     - 松耦合
     - 紧耦合
 
-## 5.集成计算 case 3: 芯部输运
+## case 3: 集成计算   
 - 输运求解
 - Tokamak 类
 - 多 Actor 耦合
 - 集成工作流
 
-## 6. 小结
-- ？？？？
+## 小结
+
 
 FyTok 用户指南
 ==============================
