@@ -97,6 +97,8 @@ class SpitzerDemo(
             / (1.0 + 0.47 * (Zeff - 1.0))
         )
 
+        # 将计算结果赋值给结果
+
         res.profiles_1d.conductivity_parallel = 1.0 / eta
 
         return res
